@@ -10,6 +10,7 @@ const server = http.createServer((req, res) => {
     contentType: req.headers["content-type"],
   };
 
+  //test
   res.writeHead(200, { "Content-Type": "application/json" });
   if (req.method == "GET") {
     res.end(JSON.stringify(reqInfo));
