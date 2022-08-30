@@ -2,7 +2,7 @@
 
 const http = require("http");
 const queryString = require("query-string");
-const server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => { //req = request res = respond
   console.log(req.url);
   let reqInfo = {
     url: req.url,
